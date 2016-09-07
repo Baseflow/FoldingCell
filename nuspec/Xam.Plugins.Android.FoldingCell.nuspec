@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Xam.Plugins.Android.FoldingCell</id>
+        <version>1.0.2</version>
+        <title>FoldingCell for Xamarin.Android</title>
+        <authors>Martijn van Dijk</authors>
+        <owners>Martijn van Dijk</owners>
+        <licenseUrl>https://github.com/martijn00/FoldingCell/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/martijn00/FoldingCell</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/martijn00/FoldingCell/master/icon_foldingcell.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>FoldingCell is an expanding content cell inspired by folding paper material for Xamarin Android</description>
+        <summary>FoldingCell</summary>
+        <tags>xamarin, monodroid, C#, xamarin.android, android, FoldingCell, folding, cell, expanding, material</tags>
+        <dependencies>
+            <group targetFramework="MonoAndroid0.0" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\FoldingCell\bin\Release\FoldingCell.dll" target="lib\MonoAndroid\FoldingCell.dll" />
+    </files>
+</package>

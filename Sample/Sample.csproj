@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2790B8DA-F997-4EF9-AA21-57A0B0D827F9}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sample</RootNamespace>
+    <AssemblyName>Sample</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidSupportedAbis>arm64-v8a;armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable">
+      <HintPath>..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
+      <HintPath>..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FoldingCellListAdapter.cs" />
+    <Compile Include="Item.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\layout\cell.axml" />
+    <AndroidResource Include="Resources\layout\cell_content_layout.axml" />
+    <AndroidResource Include="Resources\layout\cell_title_layout.axml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\arrow.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\avatar.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\background.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\from_to_purple.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\head_image.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\image.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\stars.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\arrow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\avatar.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\background.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\from_to_purple.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\head_image.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\image.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\menu_icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\stars.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\arrow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\avatar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\background.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\from_to_purple.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\head_image.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\image.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\menu_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\stars.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\arrow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\avatar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\background.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\from_to_purple.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\head_image.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\image.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\menu_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\stars.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\arrow.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\avatar.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\background.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\from_to_purple.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\head_image.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\image.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\menu_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\stars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FoldingCell\FoldingCell.csproj">
+      <Project>{EB98D11B-0F1C-4C63-94C3-3509C69536C4}</Project>
+      <Name>FoldingCell</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
+</Project>

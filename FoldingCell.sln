@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoldingCell", "FoldingCell\FoldingCell.csproj", "{EB98D11B-0F1C-4C63-94C3-3509C69536C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{2790B8DA-F997-4EF9-AA21-57A0B0D827F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB98D11B-0F1C-4C63-94C3-3509C69536C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB98D11B-0F1C-4C63-94C3-3509C69536C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB98D11B-0F1C-4C63-94C3-3509C69536C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB98D11B-0F1C-4C63-94C3-3509C69536C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2790B8DA-F997-4EF9-AA21-57A0B0D827F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2790B8DA-F997-4EF9-AA21-57A0B0D827F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2790B8DA-F997-4EF9-AA21-57A0B0D827F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2790B8DA-F997-4EF9-AA21-57A0B0D827F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
