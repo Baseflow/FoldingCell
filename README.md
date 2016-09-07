@@ -5,6 +5,6 @@ Xamarin bindings library for FoldingCell [library](https://github.com/Ramotion/f
 
 Plugin is available on [Nuget](https://www.nuget.org/packages/Xam.Plugins.Android.FoldingCell/).
 
-[![Animation](folding_cell_preview.gif)](https://dribbble.com/shots/2121350-Delivery-Card)
+[![Animation](https://raw.githubusercontent.com/Ramotion/folding-cell-android/master/folding_cell_preview.gif)](https://dribbble.com/shots/2121350-Delivery-Card)
 
 See the sample for implementation.
